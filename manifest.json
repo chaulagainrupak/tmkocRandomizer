@@ -1,0 +1,21 @@
+{
+    "manifest_version": 2,
+    "name": "tmkoc",
+    "version": "1.0",
+    "description": "Redirects YouTube pages to a TMKOC search with a random number.",
+    "icons": {
+      "96": "tmkocRandomizerLogo.png"
+    },
+    "browser_action": {
+        "default_popup":"index.html"
+    },
+
+    "content_scripts": [
+      {
+        "matches": ["*://*.youtube.com/*"],
+        "js": ["tmkoc.js"]
+      }
+    ],
+    "content_security_policy": "script-src 'self'; object-src 'self'"
+  }
+  

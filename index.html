@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+
+    
+* {
+    @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+    color: #040705;
+    font-family: "Open Sans", sans-serif; 
+    font-size: large;
+    text-align: center;
+
+    width: min-content;
+}   
+
+body {
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+
+}
+
+h2 {
+    text-align: center;
+    margin-top: 2%;
+}
+
+.input {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+}
+
+.start, .end {
+
+    display: flex;
+    flex-direction: column; 
+    justify-content: center;
+    align-items: center;
+
+    padding: 0;
+    margin: 0;
+}
+
+input {
+    border: none;
+    width: 200%;
+
+    border-bottom: #3CB371 solid 2px ;
+}
+
+input:focus{
+    outline: none;
+}
+button {
+    margin-top: 20px;
+    background-color: #3CB371;
+    border: none;
+    font-size: xx-large;
+    display: inline-block;
+    padding: 10px 20px;
+    border-radius: 10px;
+}
+
+footer{
+    margin-top: 2%;
+    font-size: 12px;
+    width: 100%;
+}
+
+    </style>
+</head>
+<body>
+    <h2 style="font-size: x-large;">TMKOC Episode Randomizer</h2>
+    
+    <div class="input">
+        <div class="start">
+            <label for="start">Start:</label>
+            <input type="number" id="start" name="start" value="1">
+        </div>
+        <div class="end">
+            <label for="end">End:</label>
+            <input type="number" id="end" name="end" value="1000">
+        </div>
+    </div>
+    <button id="randomizer">Randomize!</button>
+
+
+
+    <script src="tmkoc.js"></script>
+</body>
+<footer>
+        Made with 💚 in Nepal 🇳🇵 by:   <a href="https://github.com/chaulagainrupak/"><img src="github.png" alt="github-logo" style="height: 12px; width: auto;"></a>
+</footer>
+</html>
