@@ -1,8 +1,8 @@
 {
     "manifest_version": 2,
-    "name": "tmkoc",
+    "name": "tmkocRandomizer",
     "version": "1.0",
-    "description": "Redirects YouTube pages to a TMKOC search with a random number.",
+    "description": "Redirects you to a TMKOC search with a random episode number so you don't have to decide what episode to choose.",
     "icons": {
       "96": "tmkocRandomizerLogo.png"
     },
