@@ -2,7 +2,7 @@
   "manifest_version": 3,
   "name": "tmkocRandomizer",
   "description": "Redirects you to a TMKOC search with a random episode number so you don't have to decide what episode to choose.",
-  "version": "1.0",
+  "version": "2.0",
   "action": {
     "default_popup": "index.html",
     "default_icon": "tmkocRandomizerLogo.png"

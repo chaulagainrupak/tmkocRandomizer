@@ -68,7 +68,10 @@ button {
     display: inline-block;
     padding: 10px 20px;
     border-radius: 10px;
+    cursor: pointer;
+
 }
+
 
 footer{
     margin-top: 2%;
@@ -96,6 +99,34 @@ footer{
 
 
     <script src="tmkoc.js"></script>
+        <script>
+        // Function to save the input values to localStorage
+        function saveInputValues() {
+            const startValue = document.getElementById('start').value;
+            const endValue = document.getElementById('end').value;
+            localStorage.setItem('startValue', startValue);
+            localStorage.setItem('endValue', endValue);
+        }
+
+        // Function to load the input values from localStorage
+        function loadInputValues() {
+            const startValue = localStorage.getItem('startValue');
+            const endValue = localStorage.getItem('endValue');
+            if (startValue !== null) {
+                document.getElementById('start').value = startValue;
+            }
+            if (endValue !== null) {
+                document.getElementById('end').value = endValue;
+            }
+        }
+
+        // Add event listeners to save input values on change
+        document.getElementById('start').addEventListener('input', saveInputValues);
+        document.getElementById('end').addEventListener('input', saveInputValues);
+
+        // Load the input values when the page loads
+        window.addEventListener('DOMContentLoaded', loadInputValues);
+    </script>
 </body>
 <footer>
         Made with 💚 in Nepal 🇳🇵 by:   <a href="https://github.com/chaulagainrupak/"><img src="github.png" alt="github-logo" style="height: 12px; width: auto;"></a>

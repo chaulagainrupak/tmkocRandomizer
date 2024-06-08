@@ -12,6 +12,11 @@ function redirectToTMKOCSearch() {
     const randomNumber = Math.floor(Math.random() * (end - start + 1)) + start;
     const newURL = `https://www.youtube.com/results?search_query=tmkoc+${randomNumber}`;
     window.open(newURL, '_blank');
+
+
+        var audio = new Audio('aePapaJi.mp3');
+        audio.play();
+
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -20,3 +25,5 @@ document.addEventListener('DOMContentLoaded', () => {
         button.addEventListener('click', redirectToTMKOCSearch);
     }
 });
+
+
